@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   resources :tweets 
   resources :users, only: :show
   resources :tweet do
-    resources :comments, only:create
+    resources :comments, only: :create
   end
 end
